@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 {% block title %}
-{{ title }}
+    {{group.title}}
 {% endblock %}
 {% block content %}
-        <h1>{{ text }}</h1>
+        <h1> Главная страница </h1>
         <p>
-          Группа тайных поклонников графа.
+          {{post.text}}
         </p>
-        <div class="container py-5">
           {% for post in posts %}
           <article>
             <ul>
